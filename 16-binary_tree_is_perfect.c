@@ -10,7 +10,6 @@ int binary_tree_is_perfect(const binary_tree_t *tree);
 
 /**
  * is_leaf - Checks if a node is a leaf of a binary tree.
- *
  * @node: A pointer to the node to check.
  *
  * Return: If the node is a leaf, 1, otherwise, 0.
@@ -77,5 +76,5 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	if (tree == NULL)
 		return (0);
-	return (is_perfect_recursive(tree,binary_tree_depth(get_leaf(tree)), 0));
+	return (is_perfect_recursive(tree, binary_tree_depth(get_leaf(tree)), 0));
 }
